@@ -1,6 +1,6 @@
 import java.util.HashMap;
 
-public class GitHubAccount {
+public class Account {
 
     private String username;
     private String name;
@@ -8,7 +8,7 @@ public class GitHubAccount {
     private HashMap<String, Repository> repos;
 
 
-    public GitHubAccount(String username, String name, AccountType accountType) {
+    public Account(String username, String name, AccountType accountType) {
         this.username = username;
         this.name = name;
         this.accountType = accountType;

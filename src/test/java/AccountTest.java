@@ -1,13 +1,11 @@
 import org.junit.Before;
 import org.junit.Test;
 
-import java.util.HashMap;
-
 import static org.junit.Assert.assertEquals;
 
-public class GitHubAccountTest {
+public class AccountTest {
 
-    private GitHubAccount account;
+    private Account account;
     private Repository repo;
     private Repository repo1;
 
@@ -17,7 +15,7 @@ public class GitHubAccountTest {
         repo = new Repository("w04_Ruby_Project_Vet_Management", "Solo Project of Ruby and PostgreSQL", RepoType.PUBLIC);
         repo1 = new Repository("PDA_Liliana_Everett", "Proof of level of education", RepoType.PRIVATE);
 
-        account = new GitHubAccount("Liliana Everett", "Liliana's Repo", AccountType.FREE);
+        account = new Account("Liliana Everett", "Liliana's Repo", AccountType.FREE);
         account.addRepo(repo);
     }
 
