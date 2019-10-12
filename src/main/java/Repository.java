@@ -54,4 +54,33 @@ public class Repository {
         }
         return commitsFound;
     }
+
+
+//    public void revert(int id) {
+//        ArrayList<Commit> newCommits = new ArrayList<Commit>();
+//
+//        for (int i = 0; i < commits.size(); i++) {
+//            for (int j = i+1; j < commits.size(); j++) {
+//                if(i.getCommitId() < j.getCommitId() && < id) {
+//                    newCommits.add(i);
+//                }
+//            }
+//        }
+//
+//    }
+
+
+    public void revert(int id) {
+        ArrayList<Commit> newCommits = new ArrayList<Commit>();
+        for (Commit commit : this.commits) {
+            if (commit.getCommitId() <= id) {
+                newCommits.add(commit);
+            }
+        }
+        this.commits = newCommits;
+    }
+
+
+
+
 }

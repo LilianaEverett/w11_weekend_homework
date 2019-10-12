@@ -76,4 +76,5 @@ public class GitHubAccountTest {
         account.changeAccountType();
         assertEquals(AccountType.FREE, account.getAccountType());
     }
+
 }
